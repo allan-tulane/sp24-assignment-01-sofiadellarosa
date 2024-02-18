@@ -12,25 +12,25 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 1. (2 pts ea) **Asymptotic notation** (12 pts)
 
   - 1a. Is $2^{n+1} \in O(2^n)$? Why or why not? 
-. Yes, because 2^{n+1} is equivalent to 2^n * 2^1, which exists in O(2^n)
+. Yes, because $2^{n+1}$ is equivalent to $2^n$ * $2^1$, which exists in $O(2^n)$
 .  
 .  
 .  
 . 
   - 1b. Is $2^{2^n} \in O(2^n)$? Why or why not?     
-.  No, there is no constant c that 2^n can be multiplied with to get 2^{2^n}. 
+.  No, there is no constant c that $2^n$ can be multiplied with to get $2^{2^n}$. 
 .  
 .  
 .  
 .  
   - 1c. Is $n^{1.01} \in O(\mathrm{log}^2 n)$?    
-.  No, there is no constant c at which n^{1.01} can be multiplied to get O(\mathrm{log}^2 n).
+.  No, there is no constant c at which $n^{1.01}$ can be multiplied to get $O(\mathrm{log}^2 n)$.
 .  
 .  
 .  
 
   - 1d. Is $n^{1.01} \in \Omega(\mathrm{log}^2 n)$?  
-.  yes, the graph of n^{1.01} grows faster 
+.  yes, the graph of $n^{1.01}$ grows faster 
 .  
 .  
 .  
