@@ -12,7 +12,7 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 1. (2 pts ea) **Asymptotic notation** (12 pts)
 
   - 1a. Is $2^{n+1} \in O(2^n)$? Why or why not? 
-.  Yes, because 2^{n+1} is equivalent to 2^n * 2^1, which exists in O(2^n)
+. Yes, because 2^{n+1} is equivalent to 2^n * 2^1, which exists in O(2^n)
 .  
 .  
 .  
@@ -63,7 +63,7 @@ $$
   - 2b. (6 pts) What does this function do, in your own words?  
 
 .  
-.  
+.  This function recursively adds the previous two numbers together until it returns the fibonacci number for input x. Recursion ends when the previous two numbers are 0 or 1, the base cases. 
 .  
 .  
 .  
@@ -92,8 +92,8 @@ E.g., `longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3`
 
   - 3b. (4 pts) What is the Work and Span of this implementation?  
 
-.  
-.  
+.  Work = O(n) --> total num of operations is proportional to the len of mylist 
+.  Span = O(1) --> nothing is performed in parallel 
 .  
 .  
 .  
@@ -106,10 +106,9 @@ E.g., `longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3`
   - 3c. (7 pts) Next, implement a `longest_run_recursive`, a recursive, divide and conquer implementation. This is analogous to our implementation of `sum_list_recursive`. To do so, you will need to think about how to combine partial solutions from each recursive call. Make use of the provided class `Result`.   
 
   - 3d. (4 pts) What is the Work and Span of this sequential algorithm?  
-.  
-.  
-.  
-.  
+.  Work = O(n)
+.  Span = O(log n) 
+. 
 .  
 .  
 .  
@@ -121,7 +120,7 @@ E.g., `longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3`
 
   - 3e. (4 pts) Assume that we parallelize in a similar way we did with `sum_list_recursive`. That is, each recursive call spawns a new thread. What is the Work and Span of this algorithm?  
 
-.  
+.  Work and Span remain the same 
 .  
 .  
 .  
