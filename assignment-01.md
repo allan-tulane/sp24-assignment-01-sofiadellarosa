@@ -2,7 +2,7 @@
 
 # CMPS 2200 Assignment 1
 
-**Name:**_________________________
+**Name:** Sofia Della Rosa
 
 
 In this assignment, you will learn more about asymptotic notation, parallelism, functional languages, and algorithmic cost models. As in the recitation, some of your answer will go here and some will go in `main.py`. You are welcome to edit this `assignment-01.md` file directly, or print and fill in by hand. If you do the latter, please scan to a file `assignment-01.pdf` and push to your github repository. 
@@ -12,35 +12,35 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 1. (2 pts ea) **Asymptotic notation** (12 pts)
 
   - 1a. Is $2^{n+1} \in O(2^n)$? Why or why not? 
-.  
+.  Yes, because 2^{n+1} is equivalent to 2^n * 2^1, which exists in O(2^n)
 .  
 .  
 .  
 . 
   - 1b. Is $2^{2^n} \in O(2^n)$? Why or why not?     
-.  
+.  No, there is no constant c that 2^n can be multiplied with to get 2^{2^n}. 
 .  
 .  
 .  
 .  
   - 1c. Is $n^{1.01} \in O(\mathrm{log}^2 n)$?    
-.  
+.  No, there is no constant c at which n^{1.01} can be multiplied to get O(\mathrm{log}^2 n).
 .  
 .  
 .  
 
   - 1d. Is $n^{1.01} \in \Omega(\mathrm{log}^2 n)$?  
-.  
+.  yes, the graph of n^{1.01} grows faster 
 .  
 .  
 .  
   - 1e. Is $\sqrt{n} \in O((\mathrm{log} n)^3)$?  
-.  
+.  no, at some point, the graph of $\sqrt{n}$ grows faster 
 .  
 .  
 .  
   - 1f. Is $\sqrt{n} \in \Omega((\mathrm{log} n)^3)$?  
-.  
+.  yes, at some point, the graph of $\sqrt{n}$ grows faster 
 
 
 2. **SPARC to Python** (12 pts)
